@@ -1,0 +1,23 @@
+<%- include('./includes/head.ejs') %>
+<main>
+  <div class="url-box">
+    <form class="form" action="/short-url" method="POST">
+      <div class="form-group">
+        <label for="inputUrl" class="form-label">URL</label>
+      </div>
+      <div class="form-group d-flex">
+        <input
+          type="text"
+          class="form-control"
+          name="orgUrl"
+          id="inputUrl"
+          placeholder="Enter URL"
+        />
+        <div class="form-submit">
+          <button type="submit" class="btn">Shorten</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</main>
+<%- include('./includes/end.ejs')%>
